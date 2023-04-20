@@ -88,7 +88,7 @@ def play(game, x_player, o_player, print_game = True):
 
             if game.current_winner:
                 if print_game:
-                    print(letter + 'Wins!')
+                    print(letter + ' Wins!')
                 return letter
 
             #Alternating the letter
@@ -103,7 +103,8 @@ def play(game, x_player, o_player, print_game = True):
 if __name__== '__main__':
     x_player = HumanPlayer('X')
     o_player = RandomComputerPlayer('O')
-    t = TicTacToe
+    t = TicTacToe()
     play(t,x_player,o_player, print_game=True)
+    
         
                         
